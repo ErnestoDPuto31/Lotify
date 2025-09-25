@@ -1,0 +1,55 @@
+/* Field labels (bold titles) */
+.label-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #2e3a59;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+
+.label-value {
+    -fx-font-weight: normal;
+    -fx-text-fill: #2e3a59;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+
+
+/* Status colors */
+.status-overdue {
+    -fx-text-fill: #e74c3c; /* Red */
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+
+.status-active {
+    -fx-text-fill: #2ecc71; /* Green */
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+
+.alert-header-text {
+    -fx-text-fill: #2e3a59;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins Medium";
+}
+.button {
+    -fx-background-radius: 12;
+    -fx-padding: 8 20;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button-ok {
+    -fx-background-color: linear-gradient(to bottom, #b7c7ec 0%, #8CA9ED 100%);
+    -fx-text-fill: white;
+}
+
+.button-ok:hover {
+    -fx-background-color: linear-gradient(to right, #3c8ef5, #00c9e9);
+}
+
+

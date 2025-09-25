@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="620.0" prefWidth="980.0" style="-fx-background-color: transparent;" stylesheets="@transactions.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controllers.TransactionsController">
+
+    <children>
+        <DatePicker fx:id="fromDatePicker" layoutX="30.0" layoutY="30.0" prefHeight="38.0" prefWidth="130.0" promptText="From" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0" />
+        <DatePicker fx:id="toDatePicker" layoutX="169.0" layoutY="15.0" prefHeight="38.0" prefWidth="130.0" promptText="To" styleClass="date-picker" AnchorPane.topAnchor="15.0" />
+
+        <HBox layoutX="32.0" prefHeight="71.0" prefWidth="736.0" spacing="15.0" styleClass="hbox-action-bar" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="300.0">
+            <children>
+                <Button fx:id="viewDetailsButton" mnemonicParsing="false" onAction="#handleViewDetails" prefHeight="50.0" prefWidth="200.0" text="VIEW DETAILS">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-view-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+                <Button fx:id="printReceiptButton" mnemonicParsing="false" onAction="#handlePrintReceipt" prefHeight="48.0" prefWidth="226.0" text="PRINT RECEIPT">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-print-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+                <Button fx:id="adjustRefundButton" mnemonicParsing="false" onAction="#handleAdjustRefund" prefHeight="48.0" prefWidth="230.0" text="ADJUST/REFUND">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-price-tag-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            </children>
+        </HBox>
+
+        <ChoiceBox fx:id="filterChoiceBox" layoutX="668.0" layoutY="15.0" prefHeight="48.0" prefWidth="90.0" AnchorPane.rightAnchor="301.0" AnchorPane.topAnchor="15.0" />
+
+
+        <VBox prefHeight="654.0" prefWidth="262.0" styleClass="vbox" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <children>
+                <Label prefHeight="22.0" prefWidth="221.0" styleClass="section-title" text="TRANSACTION SUMMARY" textAlignment="CENTER" wrapText="true" />
+                <VBox prefHeight="112.0" prefWidth="232.0" spacing="5.0">
+                    <children>
+                        <Label styleClass="total-caption" text="TOTAL TRANSACTIONS:" />
+                        <Label fx:id="totalTransactionsLabel" text="[Total Transactions]" />
+                        <Label styleClass="total-caption" text="TOTAL AMOUNT:" />
+                        <Label fx:id="totalAmountLabel" text="[Total Amount]" />
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+
+                <Label prefHeight="48.0" prefWidth="230.0" styleClass="section-title" text="CLIENT DETAILS" textAlignment="CENTER" wrapText="true" />
+
+                <AnchorPane prefHeight="338.0" prefWidth="232.0">
+                    <children>
+                  <VBox layoutX="14.0" layoutY="14.0" prefHeight="256.0" prefWidth="190.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                              <Label styleClass="detail-caption" text="Plate #:" />
+      
+                              <Label fx:id="detailPlateLabel" styleClass="detail-value" />
+                              <Label styleClass="detail-caption" text="Owner:" />
+                              <Label fx:id="detailOwnerLabel" styleClass="detail-value" />
+                              <Label styleClass="detail-caption" text="Slot:" />
+                              <Label fx:id="detailSlotLabel" styleClass="detail-value" />
+                              <Label styleClass="detail-caption" text="Duration:" />
+                              <Label fx:id="detailDurationLabel" styleClass="detail-value" />
+                              <Label styleClass="detail-caption" text="Total Payment:" />
+                              <Label fx:id="detailTotalLabel" styleClass="detail-value" />
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+                     </padding>
+                  </VBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+      <VBox layoutX="16.799999237060547" layoutY="72.4000015258789" prefHeight="466.0" prefWidth="736.0" spacing="10.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="78.0">
+         <children>
+            <TableView fx:id="transactionTable" minHeight="200.0" prefHeight="569.0" prefWidth="700.0" stylesheets="@chartstyles.css">
+              <columns>
+                <TableColumn fx:id="transactionIdColumn" prefWidth="65.0" resizable="false" sortable="false" text="Trans. ID" />
+                  <TableColumn fx:id="plateNumberColumn" editable="false" prefWidth="105.0" resizable="false" sortable="false" text="Plate #." />
+                  <TableColumn fx:id="ownerNameColumn" editable="false" prefWidth="100.0" resizable="false" sortable="false" text="Owner" />
+                  <TableColumn fx:id="durationColumn" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Duration" />
+                  <TableColumn fx:id="timeInColumn" editable="false" prefWidth="120.0" resizable="false" sortable="false" text="Time-In" />
+                  <TableColumn fx:id="timeOutColumn" editable="false" prefWidth="120.0" resizable="false" sortable="false" text="Time-Out" />
+                  <TableColumn fx:id="createdAtColumn" editable="false" prefWidth="140.0" resizable="false" sortable="false" text="Created" />
+              </columns>
+            </TableView>
+            <Pagination fx:id="pagination" prefHeight="200.0" prefWidth="736.0" />
+         </children>
+      </VBox>
+      <TextField fx:id="searchField" layoutX="331.0" layoutY="15.0" prefHeight="48.0" prefWidth="144.0" promptText="Search:" styleClass="text-field" AnchorPane.topAnchor="15.0" />
+      <ChoiceBox fx:id="searchFilterChoiceBox" layoutX="498.0" layoutY="15.0" prefHeight="48.0" prefWidth="132.0" AnchorPane.topAnchor="15.0" />
+      <Label layoutX="287.0" layoutY="26.0" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="311.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="311.0" AnchorPane.rightAnchor="729.8" AnchorPane.topAnchor="31.0">
+         <image>
+            <Image url="@../../../images/icons8-search-20.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="475.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="30.0">
+         <image>
+            <Image url="@../../../images/icons8-filter-20.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

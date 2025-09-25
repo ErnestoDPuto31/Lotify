@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="960.0" style="-fx-background-color: transparent;" stylesheets="@chartstyles.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controllers.DashboardController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="450.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #375FBD;" styleClass="dashboard-card">
+               <children>
+                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="183.0" styleClass="metric-title" text="TOTAL SLOTS" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="25.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="62.0" prefWidth="227.0" styleClass="metric-value" text="260" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="45.0" />
+                     </font></Label>
+               </children></VBox>
+            <VBox prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #BD3737;" styleClass="dashboard-card">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="211.0" styleClass="metric-title" text="OCCUPIED" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="25.0" />
+                     </font></Label>
+                  <Label fx:id="occupiedLabel" alignment="CENTER" prefHeight="62.0" prefWidth="227.0" styleClass="metric-value" text="X" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="45.0" />
+                     </font></Label>
+               </children></VBox>
+            <VBox prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #4DBD37;" styleClass="dashboard-card">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="214.0" styleClass="metric-title" text="VACANT" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="25.0" />
+                     </font></Label>
+                  <Label fx:id="vacantLabel" alignment="CENTER" prefHeight="62.0" prefWidth="227.0" styleClass="metric-value" text="XXX" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="45.0" />
+                     </font></Label>
+               </children></VBox>
+            <VBox prefHeight="150.0" prefWidth="250.0" style="-fx-background-color: #BDAD37;" styleClass="dashboard-card">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="222.0" styleClass="metric-title" text="REVENUE" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="25.0" />
+                     </font></Label>
+                  <Label fx:id="totalRevenueLabel" alignment="CENTER" prefHeight="62.0" prefWidth="260.0" styleClass="revenue-label" text="XXXX" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="36.0" />
+                     </font></Label>
+               </children></VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <TableView fx:id="tableView" layoutX="12.0" layoutY="423.2" prefHeight="150.0" prefWidth="938.0" stylesheets="@chartstyles.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="430.0">
+        <columns>
+          <TableColumn editable="false" prefWidth="75.0" text="Vehicle Plate No." />
+          <TableColumn editable="false" prefWidth="75.0" text="Entry Time" />
+            <TableColumn editable="false" prefWidth="75.0" text="Exit Time" />
+            <TableColumn editable="false" prefWidth="75.0" text="Fee Paid" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox layoutX="12.0" layoutY="172.0" prefHeight="275.0" prefWidth="960.0" spacing="20.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <LineChart fx:id="lineChart" prefHeight="251.0" prefWidth="462.0" styleClass="line-chart" title="Weekly Revenue">
+               <xAxis>
+                  <CategoryAxis label="Time" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis label="Revenue" minorTickCount="50" side="LEFT" tickLabelGap="5.0" upperBound="500.0">
+                     <tickLabelFont>
+                        <Font name="Poppins Medium" size="10.0" />
+                     </tickLabelFont>
+                  </NumberAxis>
+               </yAxis>
+            </LineChart>
+            <PieChart fx:id="pieChart" minHeight="235.0" prefHeight="235.0" prefWidth="471.0" styleClass="pie-chart" title="Parking Occupancy">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </PieChart>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

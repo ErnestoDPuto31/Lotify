@@ -1,0 +1,152 @@
+.rootofcar {
+    -fx-background-color: linear-gradient(to bottom, #F2F7FF 0%, #D9E2FF 100%);
+    -fx-padding: 8;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0, 0, 5);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.mainLabel {
+    -fx-text-fill: #2e3a59;
+    -fx-font-size: 16px;
+    -fx-font-family: "Poppins Medium";
+    -fx-font-weight: Bold;
+
+}
+
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 10;
+    -fx-font-size: 12px;
+}
+
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 10;
+    -fx-font-size: 10px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #6c8fff;
+    -fx-effect: dropshadow(gaussian, #6c8fff66, 6, 0.4, 0, 0);
+}
+
+.button {
+    -fx-background-radius: 12;
+    -fx-padding: 8 20;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button-save {
+    -fx-background-color: linear-gradient(to bottom, #b7c7ec 0%, #8CA9ED 100%);
+    -fx-text-fill: white;
+}
+
+.button-save:hover {
+    -fx-background-color: linear-gradient(to right, #3c8ef5, #00c9e9);
+}
+
+.button-cancel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 12;
+    -fx-text-fill: #333;
+}
+
+.button-cancel:hover {
+    -fx-background-color: #f5f7fb;
+}
+.topbar {
+    -fx-background-color: linear-gradient(to right, #ffffff, #f2f5f9);
+    -fx-padding: 10 15;
+    -fx-background-radius: 15 15 0 0;
+    -fx-border-color: rgba(0,0,0,0.06);
+    -fx-border-width: 0 0 1 0;
+}
+
+.topbar-label {
+    -fx-text-fill: #2e3a59;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+}
+
+.close-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #777;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
+
+.close-button:hover {
+    -fx-text-fill: #e74c3c;
+}
+
+.bottombar {
+    -fx-background-color: linear-gradient(to right, #f2f5f9, #ffffff);
+    -fx-padding: 10 15;
+    -fx-background-radius: 0 0 15 15; /* Rounded only at bottom corners */
+    -fx-border-color: rgba(0,0,0,0.06);
+    -fx-border-width: 1 0 0 0; /* Top border only */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 5, 0, 0, -2);
+}
+
+.bottombar-label {
+    -fx-text-fill: #2e3a59;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+}
+.spinner {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 4 6;
+    -fx-font-size: 12px;
+}
+
+/* On focus */
+.spinner:focused {
+    -fx-border-color: #6c8fff;
+    -fx-effect: dropshadow(gaussian, #6c8fff66, 6, 0.4, 0, 0);
+}
+
+/* Spinner text area */
+.spinner .text-field {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 4;
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+}
+
+/* Spinner increment / decrement buttons */
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-padding: 2;
+}
+
+.spinner .increment-arrow-button:hover,
+.spinner .decrement-arrow-button:hover {
+    -fx-background-color: #eaf0ff;
+    -fx-background-radius: 4;
+}
+
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: #6c8fff;
+}
+
+

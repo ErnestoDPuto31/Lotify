@@ -1,0 +1,411 @@
+/* ================================
+   Root & Global
+================================ */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #F2F7FF 0%, #D9E2FF 100%);
+    -fx-font-family: "Poppins";
+}
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e6f5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 8, 0.3, 0, 2);
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Column header bar */
+.table-view .column-header-background {
+    -fx-background-color: #f5f7fb;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-color: #e0e6f5;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Column header labels */
+.table-view .column-header .label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+/* Rows */
+.table-row-cell:odd   { -fx-background-color: #fbfcfe; }
+.table-row-cell:even  { -fx-background-color: #ffffff; }
+.table-row-cell:hover { -fx-background-color: #eef3ff; }
+.table-row-cell:selected {
+    -fx-background-color: #d9e4ff;
+    -fx-text-fill: #2c3e50;
+}
+
+
+/* ================================
+   Modern Button Hierarchy
+================================ */
+.button {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-cursor: hand;
+    -fx-padding: 12 24;
+    -fx-min-width: 160px;
+    -fx-min-height: 48px;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0.2, 0, 2);
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* ===== Primary Button ===== */
+#viewDetailsButton {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#viewDetailsButton:hover   { -fx-background-color: #219150; }
+#viewDetailsButton:pressed { -fx-background-color: #1e8449; }
+
+/* ===== Secondary Button ===== */
+#printReceiptButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2980b9;
+    -fx-border-color: #2980b9;
+    -fx-border-width: 2;
+}
+#printReceiptButton:hover {
+    -fx-background-color: #ecf6ff;
+}
+#printReceiptButton:pressed {
+    -fx-background-color: #d6ecff;
+}
+
+/* ===== Tertiary Button ===== */
+#adjustRefundButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e67e22;
+    -fx-border-color: transparent;
+}
+#adjustRefundButton:hover {
+    -fx-background-color: #fff4e6;
+}
+#adjustRefundButton:pressed {
+    -fx-background-color: #ffe0c2;
+}
+
+/* ===== Hover Elevation for Filled Buttons ===== */
+#viewDetailsButton:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0.3, 0, 3);
+}
+
+/* ================================
+   TextField (Modern Input)
+================================ */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-text-fill: #2c3e50;
+    -fx-prompt-text-fill: #95a5a6;   /* subtle gray for placeholders */
+    -fx-focus-color: transparent;   /* remove default glow */
+    -fx-faint-focus-color: transparent;
+    -fx-cursor: text;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.text-field:hover {
+    -fx-border-color: #9eb6ff;
+    -fx-background-color: #f8faff;
+}
+
+/* Focused state */
+.text-field:focused {
+    -fx-border-color: #6c8fff;
+    -fx-effect: dropshadow(gaussian, #6c8fff66, 8, 0.5, 0, 0);
+    -fx-background-color: #ffffff;
+    -fx-prompt-text-fill: #b0b8c1; /* keep hint subtle even when focused */
+}
+
+/* Disabled state */
+.text-field:disabled {
+    -fx-opacity: 0.7;
+    -fx-background-color: #f5f7fb;
+    -fx-border-color: #d1d9ec;
+}
+
+
+/* ================================
+   Inputs (DatePicker & ChoiceBox)
+================================ */
+.date-picker, .choice-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 6 12;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", sans-serif;
+    -fx-text-fill: #333;
+    -fx-cursor: hand;
+    -fx-focus-color: transparent; /* remove default glow */
+    -fx-faint-focus-color: transparent;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.date-picker:hover, .choice-box:hover {
+    -fx-border-color: #9eb6ff;
+    -fx-background-color: #f8faff;
+}
+
+/* Focused state */
+.date-picker:focused, .choice-box:focused {
+    -fx-border-color: #6c8fff;
+    -fx-effect: dropshadow(gaussian, #6c8fff66, 8, 0.5, 0, 0);
+    -fx-background-color: #ffffff;
+}
+
+/* Arrow buttons inside ChoiceBox & DatePicker */
+.choice-box .arrow, .date-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 6;
+}
+
+.choice-box .arrow:hover, .date-picker .arrow-button:hover {
+    -fx-background-color: #e9efff;
+    -fx-background-radius: 6;
+}
+/* ==============================
+   DatePicker arrow button
+============================== */
+.date-picker > .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0 6 0 6;
+}
+
+.date-picker > .arrow-button:hover {
+    -fx-background-color: #eaf0ff;
+    -fx-background-radius: 6;
+}
+
+/* calendar icon inside arrow button */
+.date-picker > .arrow-button .arrow {
+    -fx-background-color: #6c8fff;
+    -fx-shape: "M12 2a10 10 0 100 20 10 10 0 000-20zm1 14H7v-2h6v2zm2-4H7V10h8v2zm0-4H7V6h8v2z";
+    /* path shape = small calendar icon */
+    -fx-scale-x: 0.6;
+    -fx-scale-y: 0.6;
+}
+/* ================================
+   DatePicker Popup Calendar
+================================ */
+
+/* Popup background */
+.date-picker-popup {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.3, 0, 3);
+    -fx-padding: 8;
+}
+
+/* Month-Year navigation bar */
+.date-picker-popup > .month-year-pane {
+    -fx-background-color: #f5f7fb;
+    -fx-border-color: #e0e6f5;
+    -fx-border-width: 0 0 1 0;
+    -fx-background-radius: 10 10 0 0;
+    -fx-padding: 6 10;
+}
+
+/* Month-Year label */
+.date-picker-popup > .month-year-pane > .label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Navigation buttons (prev/next month) */
+.date-picker-popup > .month-year-pane > .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2980b9;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+}
+.date-picker-popup > .month-year-pane > .button:hover {
+    -fx-background-color: #eef3ff;
+}
+
+/* Day names (Sun, Mon, etc.) */
+.date-picker-popup > .day-name-cell {
+    -fx-text-fill: #7f8c8d;
+    -fx-font-weight: bold;
+    -fx-background-color: #f5f7fb;
+}
+
+/* Day cells */
+.date-picker-popup > .day-cell {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+/* Hovered day */
+.date-picker-popup > .day-cell:hover {
+    -fx-background-color: #eef3ff;
+    -fx-border-color: #6c8fff;
+}
+
+/* Today highlight */
+.date-picker-popup > .day-cell:today {
+    -fx-border-color: #27ae60;
+    -fx-border-width: 1.5;
+}
+
+/* Selected day */
+.date-picker-popup > .day-cell:selected {
+    -fx-background-color: #6c8fff;
+    -fx-text-fill: #ffffff;
+}
+
+/* Disabled days (outside current month) */
+.date-picker-popup > .day-cell:disabled {
+    -fx-text-fill: #bdc3c7;
+    -fx-opacity: 0.7;
+}
+
+
+/* ================================
+   Summary & Client Details Panel
+================================ */
+.vbox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 12, 0.4, 0, 4);
+}
+
+/* ================================
+   Section Headers (clean design)
+================================ */
+.label.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 6 0 8 0;
+    -fx-background-color: transparent;
+    -fx-border-color: #8CA9ED;
+    -fx-border-width: 0 0 2 0;   /* underline only */
+    -fx-border-insets: 0 0 4 0;
+    -fx-effect: none;            /* remove shadow */
+}
+
+
+/* Totals */
+.label.total-caption {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+#totalTransactionsLabel,
+#totalAmountLabel {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+#totalAmountLabel { -fx-text-fill: #27ae60; }
+
+/* Client Details Captions */
+.label.detail-caption {
+    -fx-font-size: 14px;
+    -fx-text-fill: #7f8c8d;
+}
+
+/* Client Details Values */
+.label.detail-value {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-background-color: #f2f7ff;
+    -fx-background-radius: 8;
+    -fx-padding: 4 10;
+}
+
+/* Accent for total payment */
+#detailTotalLabel {
+    -fx-text-fill: #27ae60;
+    -fx-background-color: #eafaf1;
+}
+/* ================================
+   Action Button Bar (HBox)
+================================ */
+.hbox-action-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 14;
+    -fx-background-radius: 14;
+    -fx-padding: 15 20;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 10, 0.3, 0, 3);
+}
+
+/* ================================
+   Pagination
+================================ */
+.pagination {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0.2, 0, 2);
+}
+.pagination .pagination-control {
+    -fx-background-color: transparent;
+    -fx-spacing: 6;
+    -fx-alignment: center;
+}
+.pagination .number-button {
+    -fx-background-color: #f5f7fb;
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c9d6f0;
+    -fx-cursor: hand;
+}
+.pagination .number-button:hover {
+    -fx-background-color: #eef3ff;
+    -fx-border-color: #6c8fff;
+}
+.pagination .number-button:selected {
+    -fx-background-color: #6c8fff;
+    -fx-text-fill: #ffffff;
+}
+.pagination .control-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #2980b9;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 2 6;
+    -fx-background-radius: 6;
+}
+.pagination .control-button:pressed { -fx-background-color: #d6ecff; }
+.pagination .control-button:disabled { -fx-opacity: 0.4; }

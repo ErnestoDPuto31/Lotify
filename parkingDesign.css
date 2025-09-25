@@ -1,0 +1,147 @@
+
+/* Vacant slot */
+.slot-vacant {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 2);
+    -fx-background-color: #64B5F6;
+    -fx-border-color: white;
+    -fx-border-width: 3;
+}
+
+/* Occupied slot */
+.slot-occupied {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 8, 0, 0, 2);
+    -fx-background-color: #FF7F7F;
+    -fx-border-color: white;
+    -fx-border-width: 3;
+}
+
+/* Hover effect */
+.slot-vacant:hover, .slot-occupied:hover {
+    -fx-opacity: 0.95;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.03;
+    -fx-scale-y: 1.03;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 12, 0, 0, 4);
+}
+
+
+/* Pressed/selected effect */
+.slot-vacant:pressed, .slot-occupied:pressed {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0, 0, 3);
+    -fx-translate-y: 1;
+}
+
+/* Navigation tab/button */
+.nav-label {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: #37474F;
+
+    -fx-padding: 8 20;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-border-color: #90A4AE;
+    -fx-border-width: 1.5;
+
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0, 0, 1);
+    -fx-cursor: hand;
+
+    -fx-transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.nav-label:hover {
+    -fx-background-color: #E3F2FD;
+    -fx-border-color: #64B5F6;
+    -fx-text-fill: #1565C0;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Active/selected state */
+.nav-label:pressed {
+    -fx-background-color: #64B5F6;
+    -fx-border-color: #1565C0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 6, 0, 0, 2);
+    -fx-translate-y: 1;
+}
+.nav-label.selected {
+    -fx-background-color: #64B5F6;
+    -fx-border-color: #1565C0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 6, 0, 0, 2);
+}
+.selected-tab {
+    -fx-background-color: #64B5F6;
+    -fx-text-fill: white;
+    -fx-border-color: #1565C0;
+    -fx-font-weight: BOLD;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 6, 0, 0, 2);
+}
+
+.slot-vacant, .slot-occupied, .nav-label {
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+
+/* ScrollPane background transparent */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-hbar-policy: never;
+    -fx-vbar-policy: as-needed;
+}
+
+/* The viewport inside the ScrollPane */
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Vertical scrollbar styling (visible) */
+.scroll-bar:vertical {
+    -fx-pref-width: 8px;              /* slightly thin */
+    -fx-background-color: transparent; /* keep track background subtle */
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: rgba(200,200,200,0.3); /* light semi-transparent track */
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #90CAF9;     /* thumb color */
+    -fx-background-radius: 4px;
+}
+
+/* Hide the arrow buttons for cleaner look */
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+
+
+
+
+

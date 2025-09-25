@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="670.0" prefWidth="1180.0" style="-fx-background-color: transparent;" stylesheets="@parkingDesign.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fitToWidth="true" minWidth="-Infinity" pannable="true" prefWidth="1200.0" stylesheets="@parkingDesign.css">
+         <content>
+            <VBox prefHeight="670.0" prefWidth="1160.0" spacing="5.0" stylesheets="@parkingDesign.css">
+               <children>
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="1160.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="R1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R1" />
+                        <Button fx:id="R2" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R2" />
+                        <Button fx:id="R3" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R3" />
+                        <Button fx:id="R4" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R4" />
+                        <Button fx:id="R5" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R5" />
+                        <Button fx:id="R6" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R6" />
+                        <Button fx:id="R7" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R7" />
+                        <Button fx:id="R8" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R8" />
+                        <Button fx:id="R9" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R9" />
+                        <Button fx:id="R10" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="R10" />
+                        <Button fx:id="S1" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="S1" />
+                        <Button fx:id="S2" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="S2" />
+                        <Button fx:id="S3" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="S3" />
+                        <Button fx:id="J4" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="S4" />
+                        <Button fx:id="S5" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="S5" />
+                     </children>
+                  </HBox>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="S6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="S6" />
+                        <Button fx:id="S7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="S7" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="T6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T6" />
+                        <Button fx:id="T7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T7" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="U6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U6" />
+                        <Button fx:id="U7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U7" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="S8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="S8" />
+                        <Button fx:id="S9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="S9" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="T8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T8" />
+                        <Button fx:id="T9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T9" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="U8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U8" />
+                        <Button fx:id="U9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U9" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="S10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="S10" />
+                        <Button fx:id="T1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T1" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="T10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T10" />
+                        <Button fx:id="U1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U1" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="U10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U10" />
+                        <Button fx:id="V1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V1" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="T2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T2" />
+                        <Button fx:id="T3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T3" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="U2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U2" />
+                        <Button fx:id="U3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U3" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="V2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V2" />
+                        <Button fx:id="V3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V3" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="T4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T4" />
+                        <Button fx:id="T5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="T5" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="U4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U4" />
+                        <Button fx:id="U5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="U5" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="V4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V4" />
+                        <Button fx:id="V5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V5" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="V6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V6" />
+                        <Button fx:id="V7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V7" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="W6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W6" />
+                        <Button fx:id="W7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W7" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="X6" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X6" />
+                        <Button fx:id="X7" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X7" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="V8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V8" />
+                        <Button fx:id="V9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V9" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="W8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W8" />
+                        <Button fx:id="W9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W9" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="X8" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X8" />
+                        <Button fx:id="X9" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X9" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="V10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="V10" />
+                        <Button fx:id="W1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W1" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="W10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W10" />
+                        <Button fx:id="X1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X1" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="X10" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X10" />
+                        <Button fx:id="Y1" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="Y1" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="W2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W2" />
+                        <Button fx:id="W3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W3" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="X2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X2" />
+                        <Button fx:id="X3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X3" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="Y2" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="Y2" />
+                        <Button fx:id="Y3" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="Y3" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="1170.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="W4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W4" />
+                        <Button fx:id="W5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="W5" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="X4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X4" />
+                        <Button fx:id="X5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="X5" />
+                        <Pane prefHeight="70.0" prefWidth="150.0" />
+                        <Button fx:id="Y4" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="Y4" />
+                        <Button fx:id="Y5" mnemonicParsing="false" prefHeight="70.0" prefWidth="100.0" styleClass="slot-vacant" text="Y5" />
+                     </children>
+                  </HBox>
+                  <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+                  <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="1160.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="Y6" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Y6" />
+                        <Button fx:id="Y7" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Y7" />
+                        <Button fx:id="Y8" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Y8" />
+                        <Button fx:id="Y9" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Y9" />
+                        <Button fx:id="Y10" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Y10" />
+                        <Button fx:id="Z1" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z1" />
+                        <Button fx:id="Z2" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z2" />
+                        <Button fx:id="Z3" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z3" />
+                        <Button fx:id="Z4" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z4" />
+                        <Button fx:id="Z5" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z5" />
+                        <Button fx:id="Z6" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z6" />
+                        <Button fx:id="Z7" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z7" />
+                        <Button fx:id="Z8" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z8" />
+                        <Button fx:id="Z9" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z9" />
+                        <Button fx:id="Z10" mnemonicParsing="false" prefHeight="100.0" prefWidth="70.0" styleClass="slot-vacant" text="Z10" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

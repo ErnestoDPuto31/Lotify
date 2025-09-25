@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="980.0" style="-fx-background-color: transparent;" stylesheets="@settingsstyles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controllers.SettingsController">
+   <children>
+      <VBox layoutX="170.0" layoutY="137.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="490.0" prefWidth="980.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="290.0" prefWidth="1000.0" styleClass="vbox">
+                     <children>
+                        <Label text="USER MANUAL">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane fx:id="scrollPane" fitToWidth="true" prefHeight="530.0" style="-fx-background-color: transparent;">
+                           <content>
+                              <TextFlow fx:id="userManualFlow" prefHeight="1001.0" prefWidth="1000.0" style="-fx-background-color: white;" />
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="470.0" prefWidth="783.0" styleClass="vbox">
+                     <children>
+                        <Label text="ABOUT">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="465.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label styleClass="inner-hbox-title" text="App Name:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="inner-hbox-detail" text="Lotify: Parking System" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="465.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label styleClass="inner-hbox-title" text="Version Info:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="inner-hbox-detail" text="v1.0.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="644.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label styleClass="inner-hbox-title" text="Developers:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="146.0" prefWidth="279.0" styleClass="inner-hbox-detail" text="Ernest Victor Agalo, Kurt Ira Galanida, &amp; Mark Jucyph Reponte" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="465.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label styleClass="inner-hbox-title" text="Contact Info:">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="48.0" prefWidth="254.0" styleClass="inner-hbox-detail" text="+63 955 649 3626" wrapText="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="490.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="470.0" prefWidth="775.0" styleClass="vbox">
+                     <children>
+                        <Label text="VEHICLES SLOTS">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="262.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="132.0" styleClass="header-label" text="Motorcycles">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="normal-label" text="A1-E10: 50 Slots" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="262.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="132.0" styleClass="header-label" text="Trucks">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="normal-label" text="F1-H10: 30 Slots" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="262.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="132.0" styleClass="header-label" text="SUVs">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="normal-label" text="I1-Q10: 90 Slots" wrapText="true" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="262.0" spacing="10.0" styleClass="inner-hbox">
+                           <children>
+                              <Label prefHeight="33.0" prefWidth="132.0" styleClass="header-label" text="Cars">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label styleClass="normal-label" text="R1-Z10: 90 Slots" wrapText="true" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="470.0" prefWidth="1100.0" styleClass="vbox">
+                     <children>
+                        <Label text="PARKING PRICING &amp; CATEGORIES">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                        <GridPane prefHeight="225.0" prefWidth="587.0" styleClass="grid-pane">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.40000762939454" minWidth="10.0" prefWidth="99.79999237060548" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.60000762939453" minWidth="10.0" prefWidth="89.80000762939451" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="99.79999999999998" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.20000000000005" minWidth="10.0" prefWidth="233.20000000000005" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="132.33332519531248" minHeight="10.0" prefHeight="78.93331298828124" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="74.66668701171875" minHeight="0.0" prefHeight="55.73331298828127" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="60.400000000000006" minHeight="10.0" prefHeight="50.66661376953124" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="58.39998779296877" minHeight="10.0" prefHeight="54.13338623046877" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="52.26661376953126" minHeight="10.0" prefHeight="50.13331298828126" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="53.0" prefWidth="453.0" styleClass="header-label" text="Vehicle Type" />
+                              <Label prefHeight="53.0" prefWidth="630.0" styleClass="header-label" text="Rate per Hour (3+ Hours)" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" />
+                              <Label prefHeight="53.0" prefWidth="446.0" styleClass="header-label" text="Flat Rate (1-2 Hours)" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2" />
+                              <Label prefHeight="53.0" prefWidth="482.0" styleClass="header-label" text="Categories" GridPane.columnIndex="3" />
+                              <Label alignment="CENTER" styleClass="normal-label" text="Motorcycles" textAlignment="CENTER" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" styleClass="normal-label" text="Trucks" textAlignment="CENTER" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" styleClass="normal-label" text="SUVs" textAlignment="CENTER" GridPane.rowIndex="3" />
+                              <Label alignment="CENTER" styleClass="normal-label" text="Cars" textAlignment="CENTER" GridPane.rowIndex="4" />
+                              <Label styleClass="normal-label" text="₱ 20.00" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label styleClass="normal-label" text="₱ 40.00" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label styleClass="normal-label" text="₱ 60.00" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label styleClass="normal-label" text="₱ 80.00" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label styleClass="normal-label" text="₱ 10.00" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Label styleClass="normal-label" text="₱ 20.00" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Label styleClass="normal-label" text="₱ 25.00" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Label styleClass="normal-label" text="₱ 40.00" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Label styleClass="normal-label" text="Scooters, Motorbikes" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label styleClass="normal-label" text="Delivery, Container, Minibuses" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label styleClass="normal-label" text="SUVs, Pickups, Vans" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Label styleClass="normal-label" text="Sedans, Coupes, Hatchbacks" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,325 @@
+}.root {
+     -fx-background-color: linear-gradient(to bottom, #F2F7FF 0%, #D9E2FF 100%);
+ }
+
+
+ .topbar {
+     -fx-background-color: linear-gradient(to bottom, #ffffff 0%, #f2f5f9 100%);
+     -fx-border-color: rgba(0,0,0,0.06);
+     -fx-border-width: 0 0 1 0;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 8, 0.3, 0, 2);
+ }
+ .topbar-button {
+     -fx-background-color: transparent;
+     -fx-text-fill: BLACK;
+     -fx-font-weight: BOLD;
+     -fx-font-family: "Poppins Medium";
+     -fx-font-size: 24px;
+     -fx-padding: 8 8 8 8;
+     -fx-cursor: hand;
+     -fx-border-color: transparent;
+     -fx-border-width: 0;
+     -fx-background-radius: 8;
+     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+ }
+ .topbar-button:hover {
+     -fx-background-color: #e0e0e0;
+     -fx-background-radius: 8;
+     -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+     -fx-cursor: hand;
+ }
+
+
+ .sidebar {
+     -fx-background-color: linear-gradient(to bottom, #b7c7ec 0%, #8CA9ED 100%);
+     -fx-padding: 14px;
+     -fx-border-color: rgba(0,0,0,0.06);
+     -fx-border-width: 0 1 0 0;
+     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 12, 0.25, 3, 0);
+ }
+
+.sidebar-button {
+    -fx-font-family: "Poppins Medium";
+    -fx-font-size: 24px;
+    -fx-font-weight: BOLD;
+    -fx-text-fill: WHITE;
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-background-radius: 8px;
+    -fx-padding: 8 8 8 8;
+}
+
+ /* App Title */
+ .app-title {
+     -fx-font-family: "Poppins";
+     -fx-font-size: 30px;
+     -fx-font-weight: bold;
+     -fx-text-fill: white;
+ }
+
+.burger-label {
+    -fx-cursor: hand;
+    -fx-padding: 5px;
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(gaussian, transparent, 0, 0, 0, 0);
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.burger-label .image-view {
+    -fx-cursor: hand;
+}
+
+/* Hover effect ONLY on the ImageView */
+.burger-label:hover .image-view {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 2);
+}
+
+/* Press effect ONLY on the ImageView */
+.burger-label:pressed .image-view {
+    -fx-scale-x: 0.85;
+    -fx-scale-y: 0.85;
+    -fx-effect: dropshadow(gaussian, #8CA9ED, 8, 0.3, 0, 0);
+}
+
+
+
+
+
+
+
+
+/* ================================
+   Vehicle Feature Buttons (Modern Hierarchy)
+================================ */
+
+/* Base Button Style */
+#addButton, #editButton, #removeButton, #refreshButton {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0.2, 0, 2);
+}
+
+/* ===== Primary (Filled) ===== */
+#addButton {
+    -fx-background-color: #2ecc71; /* Green */
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#addButton:hover   { -fx-background-color: #27ae60; }
+#addButton:pressed { -fx-background-color: #1e8449; }
+
+/* ===== Secondary (Outlined) ===== */
+#editButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db;        /* Blue */
+    -fx-border-color: #3498db;
+}
+#editButton:hover   { -fx-background-color: #ecf6ff; }
+#editButton:pressed { -fx-background-color: #d6ecff; }
+
+/* ===== Danger (Filled, like Primary but red) ===== */
+#removeButton {
+    -fx-background-color: #e74c3c; /* Red */
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#removeButton:hover   { -fx-background-color: #c0392b; }
+#removeButton:pressed { -fx-background-color: #a93226; }
+
+/* ===== Tertiary (Text-only) ===== */
+#refreshButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f1c40f; /* Yellow */
+    -fx-border-color: transparent;
+}
+#refreshButton:hover   { -fx-text-fill: #d4ac0d; }
+#refreshButton:pressed { -fx-text-fill: #b7950b; }
+
+
+/* ================================
+   Vehicle Feature Buttons (Modern Hierarchy)
+================================ */
+
+/* Base Button Style */
+#addButton, #editButton, #removeButton, #refreshButton {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-padding: 10 20;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-width: 2;
+    -fx-background-insets: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0.2, 0, 2);
+}
+
+/* ===== Primary (Filled) ===== */
+#addButton {
+    -fx-background-color: #2ecc71; /* Green */
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#addButton:hover   { -fx-background-color: #27ae60; }
+#addButton:pressed { -fx-background-color: #1e8449; }
+
+/* ===== Secondary (Outlined) ===== */
+#editButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #3498db;        /* Blue */
+    -fx-border-color: #3498db;
+}
+#editButton:hover   { -fx-background-color: #ecf6ff; }
+#editButton:pressed { -fx-background-color: #d6ecff; }
+
+/* ===== Danger (Filled, like Primary but red) ===== */
+#removeButton {
+    -fx-background-color: #e74c3c; /* Red */
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+}
+#removeButton:hover   { -fx-background-color: #c0392b; }
+#removeButton:pressed { -fx-background-color: #a93226; }
+
+/* ===== Tertiary (Text-only) ===== */
+#refreshButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #f1c40f; /* Yellow */
+    -fx-border-color: transparent;
+}
+#refreshButton:hover   { -fx-text-fill: #d4ac0d; }
+#refreshButton:pressed { -fx-text-fill: #b7950b; }
+/* ================================
+   Vehicle Buttons Container (HBox)
+================================ */
+.hbox-vehicle-bar {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c9d6f0;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-padding: 12;
+    -fx-spacing: 12;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0.3, 0, 2);
+}
+
+/* Make all buttons in the hbox expand evenly */
+.hbox-vehicle-bar > .button {
+    -fx-pref-height: 50px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+
+    /* Each button shares space equally */
+    -fx-hgrow: ALWAYS;
+}
+
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e6f5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 6;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 8, 0.3, 0, 2);
+    -fx-table-cell-border-color: transparent;
+}
+
+/* Column header bar */
+.table-view .column-header-background {
+    -fx-background-color: #f5f7fb;
+    -fx-background-radius: 10 10 0 0;
+    -fx-border-color: #e0e6f5;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Column header labels */
+.table-view .column-header .label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+/* Rows */
+.table-row-cell:odd   { -fx-background-color: #fbfcfe; }
+.table-row-cell:even  { -fx-background-color: #ffffff; }
+.table-row-cell:hover { -fx-background-color: #eef3ff; }
+.table-row-cell:selected {
+    -fx-background-color: #d9e4ff;
+    -fx-text-fill: #2c3e50;
+}
+.vehicletext-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c9d6f0;
+    -fx-border-width: 1.2;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.vehicletext-field:focused {
+    -fx-border-color: #6c63ff; /* highlight purple */
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.25), 6, 0.3, 0, 0);
+}
+
+.vehiclecombo-box {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #c9d6f0;
+    -fx-border-width: 1.2;
+    -fx-padding: 4 7 4 7;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+/* Focused state */
+.vehiclecombo-box:focused {
+    -fx-border-color: #6c63ff;
+    -fx-effect: dropshadow(gaussian, rgba(108, 99, 255, 0.25), 6, 0.3, 0, 0);
+}
+
+/* Dropdown list styling */
+.vehiclecombo-box .list-cell {
+    -fx-padding: 3;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+.vehiclecombo-box .list-cell:hover {
+    -fx-background-color: #f1f0ff;
+    -fx-text-fill: #6c63ff;
+}
+/* Small info labels */
+.vehicle-label-small {
+    -fx-text-weight: BOLD;
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+    -fx-opacity: 0.8;
+}
+
+#dateTimeLabel {
+    -fx-font-family: "Poppins";
+    -fx-text-fill: #000000;
+    -fx-font-size: 32px;
+    -fx-font-weight: BOLD;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+    -fx-letter-spacing: 1px;
+}
+
